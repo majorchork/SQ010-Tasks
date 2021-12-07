@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Gallery</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+      font-family: sans-serif;
+    }
+    .container{
+      width: 100%;
+      text-align: center;
+    }
+    h1{
+      font-family: normal;
+      font-size: 70px;
+      position: relative;
+      margin: 20px;
+      
+    }
+    h1::before{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 3px;
+      background-color: rgb(105, 105, 33);
+      bottom: -10px;
+      left: 50%;
+      transform: translatex(-50%);
+      animation: animate 4s linear infinite;
+    }
+
+    #mainDiv{
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(1000px, auto));
+      grid-template-rows: repeat(auto-fill, minmax(600px, auto));
+      gap: 25px;
+      height: 70%;
+    }
+    .my{
+     position: relative;
+     height: 900px;
+     border-radius: 120px;
+     box-shadow: 20px 20px 40px lightgray;
+    }
+    .my img{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gallery</h1>
+  </div>
+ <div id="mainDiv">
+    <div class="my Div">
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\elephant.jpg" alt="elephant">
+    </div>
+    <div  class="my Div" >
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\flamingo.jpg" alt="flamingo">
+    </div>
+    <div  class="my Div">
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\fox.jpg" alt="fox">
+    </div>
+
+
+    <div class="my Diva">
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\giraffe.jpg" alt="giraffe">
+    </div>
+    <div class="my Diva">
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\lion.jpg" alt="lion">
+    </div>
+    <div class="my Diva">
+      <img src="C:\Users\USER\Desktop\SQ010 Tasks\gallery-task\images\rabbit.jpg" alt="rabbit">
+    </div>
+ </div>
+</body>
+</html>
